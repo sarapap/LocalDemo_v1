@@ -26,6 +26,12 @@ public class LocalizedGreeting {
             case 3:
                 locale = new Locale("es", "ES");
                 break;
+            case 4:
+                locale = new Locale("ja", "JP");
+                break;
+            case 5:
+                locale = new Locale("fa", "IR");
+                break;
             default:
                 System.out.println("Invalid choice. Defaulting to English.");
                 locale = new Locale("en", "US");

@@ -38,10 +38,19 @@ public class LocalizedGreetingTest {
     }
 
     @Test
-    public void testEnglishLocale() {
-        Locale locale = new Locale("en", "US");
+    public void testJapaneseGreeting() {
+        Locale locale = new Locale("ja", "JP");
         ResourceBundle messages = ResourceBundle.getBundle("Messages", locale);
-        assertEquals("Hello!", messages.getString("greeting"));
+        String greeting = messages.getString("greeting");
+        assertEquals("こんにちは", greeting);
+    }
+
+    @Test
+    public void testFarsiGreeting() {
+        Locale locale = new Locale("fa", "IR");
+        ResourceBundle messages = ResourceBundle.getBundle("Messages", locale);
+        String greeting = messages.getString("greeting");
+        assertEquals("سلام! به برنامه ما خوش آمدید", greeting);
     }
 }
 
