@@ -10,6 +10,8 @@ public class LocalizedGreeting {
         System.out.println("1. English");
         System.out.println("2. French");
         System.out.println("3. Spanish");
+        System.out.println("4. Japanese");
+        System.out.println("5. Farsi");
 
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
